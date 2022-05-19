@@ -31,11 +31,13 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
-        }
+        } finally {
+
         try {
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
         }
 
     }
@@ -54,11 +56,13 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
-        }
+        } finally {
+
         try {
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
         }
 
     }
@@ -81,11 +85,13 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
-        }
+        } finally {
+
         try {
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
         }
 
     }
@@ -106,11 +112,13 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
-        }
+        } finally {
+
         try {
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
         }
     }
 
@@ -165,11 +173,13 @@ public class UserDaoJDBCImpl implements UserDao {
             } catch (SQLException ex) {
                 throw new RuntimeException(ex);
             }
-        }
+        } finally {
+
         try {
             connection.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
+        }
         }
     }
 }
